@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import icon from '../../assets/icon.png';
 import * as C from './style';
 
 export const Response = () => {
@@ -26,6 +27,10 @@ export const Response = () => {
     
     return (
         <C.Container>
+            <header>
+                <img src={icon} />
+                <h1>Procurar<i>CEP</i></h1>
+            </header>
             {cepInfo.erro == true && 
                 <>
                     <h2>CEP não encontrado</h2>

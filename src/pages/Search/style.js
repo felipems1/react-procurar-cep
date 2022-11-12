@@ -1,6 +1,37 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+    header {
+        background-color: #0b2239;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    header img {
+        width: 40px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 45px;
+        color: #FFF;
+        font-weight: 400;
+    }
+
+    header h1 i {
+        color: #119be4;
+        font-weight: 900;
+        margin-right: 5px;
+    }
+       
     main {
         background-color: #06416a;
         height: 100vh;

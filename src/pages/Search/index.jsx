@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import icon from '../../assets/icon.png';
 import * as C from './style';
 
 export const Search = () => {
@@ -21,9 +22,13 @@ export const Search = () => {
 
     return (
         <C.Container>
+            <header>
+                <img src={icon} />
+                <h1>Procurar<i>CEP</i></h1>
+            </header>
             <main>
                 <h3>Procure e encontre CEPS de todo o Brasil</h3>
-                <p>Faça a procura e encontre o CEP desejado em um clique</p>
+                <p>Faça a procura e encontre o CEP desejado em um clique.</p>
                 <input 
                     type="text"
                     onChange={handleCepChange}
