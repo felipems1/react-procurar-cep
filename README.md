@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Você pode visualizar o projeto através [DESSE LINK](https://procurar-cep.web.app/58079832).
+Você pode visualizar o projeto através [DESSE LINK](https://procurar-cep.web.app/).
 
 ---
 
