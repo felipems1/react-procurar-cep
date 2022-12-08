@@ -1,130 +1,100 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: #DDD;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    
-    header {
-        background-color: #0b2239;
-        width: 100%;
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }    
+  background-color: #ddd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    header img {
-        width: 40px;
-        height: auto;
-    }
+  h2 {
+    margin-top: 150px;
+    font-size: 35px;
+    text-align: center;
+  }
 
-    header h1 {
-        font-size: 45px;
-        color: #FFF;
-        font-weight: 400;
-    }
+  p {
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+  }
 
-    header h1 i {
-        color: #119be4;
-        font-weight: 900;
-        margin-right: 5px;
-    }
+  #table-desktop {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+  }
 
-    h2 {
-        margin-top: 150px;
-        font-size: 35px;
-        text-align: center;
-    }
+  #table-desktop thead tr th,
+  #table-desktop tbody tr td {
+    padding: 20px 50px;
+    text-align: center;
+  }
 
-    p {
-        font-size: 23px;
-        margin-top: 15px;
-        margin-bottom: 30px;
-        color: #333;
-        text-align: center;
-    }
+  #table-desktop thead tr th {
+    background-color: #0879b5;
+    color: #eee;
+  }
 
-    #table-desktop {
-        margin-top: 120px;
-        margin-bottom: 60px;
-        border-collapse: collapse;
-    }
+  button {
+    width: 180px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffd400;
+    transition: all ease 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 
+  button:hover {
+    background-color: #c8a50e;
+  }
+
+  #table-mobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
     #table-desktop thead tr th,
     #table-desktop tbody tr td {
-        padding: 20px 50px;
-        text-align: center;
+      padding: 15px 30px;
     }
+  }
 
-    #table-desktop thead tr th {
-        background-color: #0879b5;
-        color: #EEE;
-    }
-
-    button {
-        width: 180px;
-        height: 35px;
-        font-size: 15px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        background-color: #ffd400;
-        transition: all ease 0.3s;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    button:hover {
-        background-color: #c8a50e;
+  @media (max-width: 430px) {
+    #table-desktop {
+      display: none;
     }
 
     #table-mobile {
-        display: none;
+      margin-top: 35px;
+      margin-bottom: 20px;
+      display: block;
     }
 
-    @media (max-width: 768px) {
-        #table-desktop thead tr th,
-        #table-desktop tbody tr td  {
-            padding: 15px 30px;
-        }
+    #table-mobile tr {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
 
-    @media (max-width: 430px) {
-        #table-desktop {
-            display: none; 
-        }
-        
-        #table-mobile {
-            margin-top: 35px;
-            margin-bottom: 20px;
-            display: block;
-        }
-
-        #table-mobile tr{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        #table-mobile tr th,
-        #table-mobile tr td {
-            padding: 9px 60px;
-        }
-
-        #table-mobile tr th {
-            background-color: #0879b5;
-            color: #EEE;
-        }
-
-        h2 {
-            margin-top: 100px;
-        }
+    #table-mobile tr th,
+    #table-mobile tr td {
+      padding: 9px 60px;
     }
+
+    #table-mobile tr th {
+      background-color: #0879b5;
+      color: #eee;
+    }
+
+    h2 {
+      margin-top: 100px;
+    }
+  }
 `;
